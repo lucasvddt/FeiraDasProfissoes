@@ -31,6 +31,14 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        mTextView.setOnClickListener{
+
+            val intent = Intent(this, CursoADS::class.java)
+            startActivity(intent)
+
+        }
+
+
 
     }
 }
