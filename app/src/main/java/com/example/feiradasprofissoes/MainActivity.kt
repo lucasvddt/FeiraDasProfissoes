@@ -1,5 +1,6 @@
 package com.example.feiradasprofissoes
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -22,5 +23,14 @@ class MainActivity : AppCompatActivity() {
         mTextView3 = findViewById(R.id.textView3)
         mTextView4 = findViewById(R.id.textView4)
         mButton = findViewById(R.id.button)
+
+        mButton.setOnClickListener{
+
+            val intent = Intent(this, TelaSorteio::class.java)
+            startActivity(intent)
+
+        }
+
+
     }
 }
